@@ -78,3 +78,46 @@ exit
 write memory
 ```
 
+### File with the Cisco Commands 
+
+The name of the file is "iosv_l2_access_sw.txt" and it has the following commands:
+
+```
+!commands for Access switches
+vlan 10
+name Trunk_VLAN
+!
+Vlan 11
+name DATA_VLAN
+!
+vlan 12
+name PHONE_VLAN
+!
+vlan 19
+name MGMT VLAN
+!
+! Configuring the Data ports
+!
+interface range g0/1-3, g1/0-3
+switchport host
+switchport access vlan 11
+no shutdown
+!
+! Configuring the phone ports
+!
+interface range g2/0-3
+switchport host
+switchport access vlan 12
+no shutdown
+!
+! Configuring trunking ports
+!
+interface range g3/0-2
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk native vlan 10
+switchport trunk allowed vlan 10,11,12,19
+no shutdown
+```
+
+
