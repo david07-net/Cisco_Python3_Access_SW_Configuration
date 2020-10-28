@@ -1,8 +1,8 @@
-#Introduction
+# Introduction
 
 This Tutorial show how to configure 3 Cisco Access Switches using Python 3 and Netmiko. 
 
-##Requirements
+## Requirements
 
 1. Have Python3 and Netmiko install. 
 2. We well need to configure manually the following parameters: SSH connection, username, password, mangement IP address. 
