@@ -173,4 +173,11 @@ for devices in access_switches_devices:
     
 ```
 
+With a single python script we were able to configure three cisco access switches. The number of access switches can increase by adding more dictionaries representing the devices. 
+
+## References
+
+1. [Udemy-Python network programming for Network Engineers(Python3)](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/)
+2. [Netmiko](https://github.com/ktbyers/netmiko)
+
 
